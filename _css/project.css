@@ -1,0 +1,136 @@
+/* Project pages styling */
+main {
+    display: flex;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+main p {
+    color: #C6C6C6;
+}
+
+button {
+    width: auto;
+    padding: 1em 1.2em;
+}
+
+button.greyBtn {
+    background-color: #C6C6C6;
+}
+
+main.projectContainer section.wrapper {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 20% auto; 
+    grid-gap: 3em;
+    z-index: 1001;
+    margin-top: 8em;
+}
+
+div.wrapAround img {
+    width: 50%;
+    padding: 2em;
+    filter: invert(1);
+}
+
+main article.fastInfo, main article.mainContent {
+    /* border: 5px solid white; */
+    margin: 0 0;
+    padding: 1em;
+}
+
+main article.fastInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+main article.fastInfo a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+main article.fastInfo a:hover {
+    color: #16FFC0;
+    margin-left: 5px;
+}
+
+h1 {
+    margin-block-start: 0em;
+    font-size: 2em;
+}
+
+main article.fastInfo div.wrapAround h4 {
+    margin-block-start: 1.33em;
+    margin-block-end: 0.33em;
+}
+
+main article.fastInfo div.wrapAround p {
+    margin-block-start: 0em;
+}
+
+main article.mainContent img {
+    width: 100%;
+}
+
+div.wrapAround {
+    display: block;
+}
+
+
+div.mobile {
+    display: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+footer {
+    display: flex;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    display: inline;
+    padding: 1em;
+    margin: 1rem;
+    
+}
+
+@media screen and (max-width: 600px) {
+    main.projectContainer section.wrapper {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr; 
+        grid-gap: 1em;
+        z-index: 1001;
+        margin-top: 7em;
+    }
+
+    div.wrapAround {
+        display: none;
+    }
+
+    div.mobile {
+        display: block;
+    }
+  }
+
+

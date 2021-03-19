@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #090909;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+button {
+    padding: 1em 1em;
+    width: 13em;
+    border-radius: 2em;
+    border: none;
+    font-weight: 800;
+    margin: 1em 1em 1em 0em;
+    cursor: pointer;
+    color: #090909;
+    position: relative;
+    z-index: 1011;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+}   
+
+button.talk:hover {
+    color: #090909;
+    background-color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+span.color {
+    color: #16FFC0;
+}
+
+span.grey {
+    color: #C6C6C6;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.line {
+    border-left: 5px #fff solid;
+    min-height: 240vh;
+    height: auto;
+    margin: 0;
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    top: 95vh;
+    bottom: 10vh;
+    z-index: 1;
+}
+
+/* fixed items styling */
+header {
+    display: flex;
+    flex-direction: row;
+    margin: 1.2em 0 0 2.2em;
+    position: fixed;
+    z-index: 1010;
+    line-height: 40px;
+    align-items: center;
+    mix-blend-mode: difference;
+}
+
+header img {
+    height: 30px;
+    width: auto;
+    vertical-align: middle;
+    margin: 0 1em 0 0;
+}
+
+div.fixed_items ul.social-media {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1002;
+}
+
+div.fixed_items ul.social-media li {
+    list-style: none;
+    color: #fff;
+    padding-top: 15px;
+    font-size: 18px;
+}
+
+div.fixed_items ul.social-media li a span i {
+    transition: 0.3s ease-in-out;
+    border: 1px solid transparent;
+    padding: 10px;
+    border-radius: 50%;
+    background: transparent;
+}
+
+div.fixed_items ul.social-media li a span i:hover {
+    color: #090909;
+    background: #fff;
+}
+
+div.fixed_items div.side-strip {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -6em;
+    transform: rotate(90deg);
+    color: #fff;
+    letter-spacing: 4px;
+    z-index: 2;
+    user-select: none;
+}
+/* end fixed items styling */
+
+/* Styling section #1 */
+
+section.intro {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+section.intro div.container {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+section.intro div.left {
+    width: 50%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+section.intro div.left h1 {
+    font-size: 3em;
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+    font-weight: 900;
+}
+
+section.intro div.left p {
+    margin-block-start: 0.2em;
+    margin-block-end: 1em;
+    color: #C6C6C6;
+}
+
+section.intro div.right {
+    width: 50%;
+    height: 75%;
+    padding: 0 50px;
+    overflow: none;
+    box-sizing: border-box;
+    position: relative;
+}
+
+section.intro div.right div.wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    align-items: center;
+}
+
+section.intro div.right div.wrapper div.leftSide {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0 0, 50.2% 0, 50.2% 85%, 0 85%);
+    content: url(../_img/HeadshotDavey.jpg);
+    top: 0;
+    object-fit: cover;
+}
+
+section.intro div.right div.wrapper div.rightSide {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(100% 15%, 50% 15%, 50% 100%, 100% 100%);
+    content: url(../_img/HeadshotDavey.jpg);
+    top: 0;
+    object-fit: cover;
+}
+/* End styling section #1 */
+
+/* Start watikdoe section #2 */
+section.watIkDoe {
+    width: 100%;
+    background-color: #050505;
+    display: flex;
+    justify-content: center;
+}
+
+section.watIkDoe h1 {
+    width: 80%;
+    margin: 1rem auto;
+    font-size: 3em;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.watIkDoe div.container {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-gap: 3em;
+    z-index: 1001;
+}
+
+section.watIkDoe div article {
+    border: 5px solid #fff;
+    background-color: #050505;
+    position: relative;
+    z-index: 1001;
+    width: auto;
+    padding: 10px;
+    top: 0;
+    transition: 1s ease-in-out;
+}
+
+.article:hover p, .article:hover h3, .article:hover h2 {
+    mix-blend-mode: difference;
+}
+
+section.watIkDoe div article div.titleWrapper {
+    height: 6em;
+}
+
+section.watIkDoe div article h2, section.watIkDoe div article h3 {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+section.watIkDoe div article p {
+    color: #C6C6C6;
+}
+/* End section #2 styling */
+
+section.myWork {
+    display: flex;
+    justify-content: center;
+}
+
+section.myWork h3 {
+    margin-block-start: 0.2em;
+    margin-block-end: 1.33em;
+    color: #C6C6C6;
+}
+
+section.myWork h1 {
+    font-size: 2em;
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+}
+
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    height: 40%;
+    width: 100%;
+    cursor: pointer;
+  }
+
+.swiper-slide {
+    height: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    overflow: hidden;
+    text-decoration: none;
+    color: #000;
+}
+
+.swiper-slide a {
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-button-disabled {
+    color: grey;
+}
+
+.swiper-controls {
+    display: flex;
+    margin-top: 2em;
+    width: 100%;
+    justify-content: flex-start;
+    z-index: 1001;
+}
+
+.swiper-controls div {
+    margin-right: 1em;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    padding: 1em;
+}
+
+.swiper-controls div:hover {
+    color: #16FFC0;
+}
+
+.card-container {
+    position: relative;
+    background: #fff;
+    color: #000;
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s ease-out;
+    overflow: hidden;
+    scroll-snap-align: start;
+    position: relative;
+    background-color: #fff;
+  }
+  
+  .card-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .card-icon img {
+      height: 10em;
+  }
+  
+  .preview-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 30px;
+    font-size: 20px;
+    color: gray;
+    z-index: 1100;
+  }
+  
+  .card-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 260px;
+    height: 260px;
+    border-radius: 100%;
+    background: #16FFC0;
+    transition: 0.3s;
+  }
+  
+  .card-container:hover {
+    background: #000;
+    color: #fff;
+    transition: all 0.2s ease-out;
+  }
+  
+  .card-container:hover .preview-text,
+  .card-container:hover .plus-icon {
+    color: #fff;
+  }
+
+  .card-container:hover .preview-text i {
+      margin-left: 5px;
+  }
+  
+  .card-container:hover .card-icon {
+    display: none;
+  }
+  
+  .card-container:hover .card-circle {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .text-wrapper {
+    position: absolute;
+    top: 50%;
+    left: -20%;
+    transform: translate(0, -50%);
+    font-size: 40px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: 0.1s ease-out;
+    animation: float-text 20s linear infinite;
+    animation-delay: 0.3s;
+    z-index: 2;
+    /* border-top: 4px solid #fff;
+    border-bottom: 4px solid #fff; */
+    opacity: 0;
+    padding: 20px 0;
+    mix-blend-mode: difference;
+  }
+  
+  @keyframes float-text {
+    0% {
+      left: -20%;
+    }
+  
+    50% {
+      left: -100%;
+    }
+  
+    100% {
+      left: -20%;
+    }
+  }
+  
+  .card-container:hover .text-wrapper {
+    opacity: 1;
+  }
+
+/* Section #4 */
+/* section.letsTalk {
+    display: flex;
+    justify-content: center;
+} */
+
+section.letsTalk {
+    height: auto;
+    margin-bottom: 10vh;
+}
+
+section.letsTalk h1 {
+    font-size: 2em;
+}
+
+section.letsTalk article {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #000;
+    border: 5px solid #fff;
+    z-index: 1001;
+    padding: 2em 0;
+}
+
+section.letsTalk article h1 {
+    font-size: 3em;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+section.letsTalk article p {
+    width: 50%;
+    text-align: center;
+    color: #C6C6C6;
+}
+
+.headline .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.mobileHeadline {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .fixed_items {
+        display: none;
+    }
+    section.intro div.container {
+        flex-direction: column;
+        padding-top: 10em;
+    }
+
+    .headline {
+        display: none;
+    }
+
+    .mobileHeadline {
+        display: block;
+    }
+
+    section.intro div.left, section.intro div.right {
+        width: 100%;
+    }
+
+    section.intro div.right {
+        height: 30vh;
+    }
+
+    div.line {
+        display: none;
+    }
+
+    section.watIkDoe div.container {
+        grid-template-columns: 1fr ;
+    }
+
+    section.watIkDoe {
+        justify-content: flex-start;
+        height: auto;
+    }
+
+    section.letsTalk article h1 {
+        text-align: center;
+    }
+}
